@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gioithieuphim.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="thanh-bar-o-ngoai">
+  <button class="menu-toggle" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+  <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+  <div class="sidebar" id="sidebar">
+    <button class="close-btn" onclick="closeSidebar()"><i class="fa-solid fa-xmark"></i></button>
+<ul class="sidebar-menu">
+    <li><a href="index.html" target="_self">Trang chủ</a></li>
+
+    <li onclick="toggleSubmenu('genre')">
+      Thể loại<span class="plus" id="plus-genre">+</span>
+    </li>
+    <ul class="submenu" id="submenu-genre">
+      <li><a href="theloai hanhdong.html" target="_self">Hành động</a></li>
+      <li><a href="theloai tinhcam.html" target="_self">Tình cảm</a></li>
+      <li><a href="theloai hoathinh.html" target="_self">Hoạt hình</a></li>
+    </ul>
+
+    <li onclick="toggleSubmenu('country')">
+      Quốc gia <span class="plus" id="plus-country">+</span>
+    </li>
+    <ul class="submenu" id="submenu-country">
+      <li><a href="quocgia vietnam.html" target="_self">Việt Nam</a></li>
+      <li><a href="quocgia hanquoc.html" target="_self">Hàn Quốc</a></li>
+      <li><a href="quocgia my.html" target="_self">Mỹ</a></li>
+    </ul>
+
+    <li><a href="phimbo.html" target="_self">Phim Bộ</a></li>
+    <li><a href="phimle.html" target="_self">Phim Lẻ</a></li>
+    <li><a href="phimchieurap.html" target="_self">Phim Chiếu Rạp</a></li>
+    <li><a href="dangnhap.html"><i class="fas fa-right-to-bracket"></i> Đăng nhập</a></li>
+    <li><a href="dangki.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+  </ul>
+</div>
+<div class="topbar">
+        <div class="logo"><a href="index.html" target="_self">NHÓM 5 FILM</a><br><span class="tieude"><a href="index.html" target="_self">Phim Online</a></span></div>
+         <button class="search-toggle" onclick="toggleSearchBar()">
+               <i class="fas fa-search"></i>
+          </button>
+        <div class="search-bar" id="searchBar">
+            <label class="timkiem" for="search"><i class="fas fa-search"></i></label>
+          <input id="search" type="text" placeholder="Nhập tên phim bạn muốn tìm kiếm...">
+        </div>
+        <div class="user-actions">
+          <a href="dangnhap.html"><i class="fas fa-right-to-bracket"></i> Đăng nhập</a>
+          <a href="dangki.html"><i class="fas fa-user-plus"></i> Đăng ký</a>
+        </div>
+</div>
+</div>
+<div class="menu">
+  <a href="index.html" target="_self">TRANG CHỦ</a>
+
+  <div class="dropdown">
+    <a href="#">THỂ LOẠI▼</a>
+    <div class="dropdown-content">
+      <a href="theloai hanhdong.html" target="_self">Hành Động</a>
+      <a href="theloai tinhcam.html" target="_self">Tình cảm</a>
+      <a href="theloai hoathinh.html" target="_self">Hoạt hình</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">QUỐC GIA▼</a>
+    <div class="dropdown-content">
+      <a href="quocgia vietnam.html" target="_self">Việt Nam</a>
+      <a href="quocgia hanquoc.html" target="_self">Hàn Quốc</a>
+      <a href="quocgia my.html" target="_self">Mỹ</a>
+    </div>
+  </div>
+
+  <a href="phimbo.html" target="_self">PHIM BỘ</a>
+  <a href="phimle.html" target="_self">PHIM LẺ</a>
+  <a href="phimchieurap.html" target="_self">PHIM CHIẾU RẠP</a>
+</div>
+<script src="gioithieuphim.js"></script>
+<div class="headerlink">
+  <span class="headerlink-item"><i class="fa fa-home"></i> <a href="index.html" target="_self">Trang chủ</a></span> /
+  <span class="headerlink-item"><a href="#">Giới thiệu</a></span> /
+  <span class="headerlink-current">Siêu lừa gặp siêu lầy</span>
+</div>
+      <div class="container">
+  <div class="movie">
+    <div class="boxall">
+      <div class="poster-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/vi/b/b1/%C3%81p_ph%C3%ADch_Si%C3%AAu_l%E1%BB%ABa_g%E1%BA%B7p_si%C3%AAu_l%E1%BA%A7y.jpg" alt="mynhanngu">
+            <a href="xemsieuluasieulay.html" class="watch-button">Xem phim</a>
+            </div>
+            <div class="box">
+             <h3>Siêu lừa gặp siêu lầy</h3>
+                <p>Thể loại: Hài hước, Lãng mạn</p>
+                <p>Quốc gia: Việt Nam</p>
+                <p>Năm phát hành: 2023</p>
+                <p>Thời lượng: 1 tiếng 25 phút</p>
+            <div class="mieu_ta">
+                <br>
+                <div>Thuộc phong cách hài hước với các “cú lừa” thông minh và lầy lội đến từ bộ đôi Tú (Anh Tú) và Khoa (Mạc Văn Khoa), Siêu Lừa Gặp Siêu Lầy của đạo diễn Võ Thanh Hòa theo chân của Khoa, tên lừa đảo tầm cỡ “quốc nội” đến đảo ngọc Phú Quốc với mong muốn đổi đời. Tại đây, Khoa gặp Tú, tay lừa đảo “hàng real” và cùng Tú thực hiện các phi vụ từ nhỏ đến lớn. Cứ ngỡ sự ranh mãnh của Tú và sự may mắn trời cho của Khoa sẽ giúp họ trở thành bộ đôi bất khả chiến bại, nào ngờ lại đối mặt với nhiều tình huống dở khóc – dở cười. Nhất là khi băng nhóm của bộ đôi nhanh chóng mở rộng vì sự góp mặt của ông Năm (Nhật Trung) và bé Mã Lai (Ngọc Phước)</div>
+                <br>
+                <div>Diễn viên: Anh Tú, Mạc Văn Khoa, Ngọc Phước</div>
+                <div>Đạo diễn: Võ Thanh Hòa</div>
+                <div>Quốc gia: Vietnam</div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+    
+
+</body>
+<tfoot>
+    <div class="footer">
+      <p class="the-end">Nhóm 5 Film là nền tảng xem phim trực tuyến hàng đầu, mang đến trải nghiệm giải trí đỉnh cao với kho phim đa dạng từ phim chiếu rạp đến phim bộ Trung Quốc, Hàn Quốc, Mỹ và nhiều quốc gia khác. Chúng tôi liên tục cập nhật những bộ phim mới nhất với chất lượng Full HD,
+       Vietsub, Thuyết Minh, Lồng Tiếng, đảm bảo tốc độ mượt mà, không giật lag.</p>
+      <p class="Nhom5">Bài báo cáo học phần Thiết Kế Web Nhóm 5</p>
+      </div>
+  </tfoot>
+</html>

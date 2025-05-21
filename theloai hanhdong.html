@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phim Hành Động</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="phimmm.css">
+</head>
+<body>
+<div class="thanh-bar-o-ngoai">
+  <button class="menu-toggle" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+  <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+  <div class="sidebar" id="sidebar">
+    <button class="close-btn" onclick="closeSidebar()"><i class="fa-solid fa-xmark"></i></button>
+<ul class="sidebar-menu">
+    <li><a href="index.html" target="_self">Trang chủ</a></li>
+
+    <li onclick="toggleSubmenu('genre')">
+      Thể loại<span class="plus" id="plus-genre">+</span>
+    </li>
+    <ul class="submenu" id="submenu-genre">
+      <li><a href="theloai hanhdong.html" target="_self">Hành động</a></li>
+      <li><a href="theloai tinhcam.html" target="_self">Tình cảm</a></li>
+      <li><a href="theloai hoathinh.html" target="_self">Hoạt hình</a></li>
+    </ul>
+
+    <li onclick="toggleSubmenu('country')">
+      Quốc gia <span class="plus" id="plus-country">+</span>
+    </li>
+    <ul class="submenu" id="submenu-country">
+      <li><a href="quocgia vietnam.html" target="_self">Việt Nam</a></li>
+      <li><a href="quocgia hanquoc.html" target="_self">Hàn Quốc</a></li>
+      <li><a href="quocgia my.html" target="_self">Mỹ</a></li>
+    </ul>
+
+    <li><a href="phimbo.html" target="_self">Phim Bộ</a></li>
+    <li><a href="phimle.html" target="_self">Phim Lẻ</a></li>
+    <li><a href="phimchieurap.html" target="_self">Phim Chiếu Rạp</a></li>
+    <li><a href="dangnhap.html"><i class="fas fa-right-to-bracket"></i> Đăng nhập</a></li>
+    <li><a href="dangki.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+  </ul>
+</div>
+<div class="topbar">
+        <div class="logo"><a href="index.html" target="_self">NHÓM 5 FILM</a><br><span class="tieude"><a href="index.html" target="_self">Phim Online</a></span></div>
+         <button class="search-toggle" onclick="toggleSearchBar()">
+               <i class="fas fa-search"></i>
+          </button>
+        <div class="search-bar" id="searchBar">
+            <label class="timkiem" for="search"><i class="fas fa-search"></i></label>
+          <input id="search" type="text" placeholder="Nhập tên phim bạn muốn tìm kiếm...">
+        </div>
+        <div class="user-actions">
+          <a href="dangnhap.html"><i class="fas fa-right-to-bracket"></i> Đăng nhập</a>
+          <a href="dangki.html"><i class="fas fa-user-plus"></i> Đăng ký</a>
+        </div>
+</div>
+</div>
+<div class="menu">
+  <a href="index.html" target="_self">TRANG CHỦ</a>
+
+  <div class="dropdown">
+    <a href="#">THỂ LOẠI▼</a>
+    <div class="dropdown-content">
+      <a href="theloai hanhdong.html" target="_self">Hành Động</a>
+      <a href="theloai tinhcam.html" target="_self">Tình cảm</a>
+      <a href="theloai hoathinh.html" target="_self">Hoạt hình</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">QUỐC GIA▼</a>
+    <div class="dropdown-content">
+      <a href="quocgia vietnam.html" target="_self">Việt Nam</a>
+      <a href="quocgia hanquoc.html" target="_self">Hàn Quốc</a>
+      <a href="quocgia my.html" target="_self">Mỹ</a>
+    </div>
+  </div>
+
+  <a href="phimbo.html" target="_self">PHIM BỘ</a>
+  <a href="phimle.html" target="_self">PHIM LẺ</a>
+  <a href="phimchieurap.html" target="_self">PHIM CHIẾU RẠP</a>
+</div>
+<div class="tieudee" id="tieude-phim">Xem phim / Thể loại / Hành động</div>
+<div id="phim-list">
+    <div class="movie">
+        <div class="label">Tập 7 Vietsub</div>
+        <a href="lanhdiatuchien.html" target="_self">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv3tc1Youj7E0L-HWPLHvdm73levTk2P-Qg2Xmq9Gh9jAFPS3M44a74lTSDhxrFodPDZOeu2yzHCYmBZQlScKOZQN4vkteAN3kICPO74sG_VWmYlMduwkaFaQ-LxTq-rp4C-8iPrf2E4W7WITaGijeRITPuN_DefBKEn1raue5Uo0Zp5zIm29pUYvA_aw/s670/lanh-dia-chien-tu-tvphim-2025.jpg" alt="Phim 1">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Lãnh Địa Tử Chiến</div>
+          <div class="movie-sub">MobLand</div>
+        </div>
+      </div>
+      <div class="movie">
+        <div class="label">Full Vietsub</div>
+        <a href="mynhanngu.html" target="_self">
+        <img src="https://upload.wikimedia.org/wikipedia/vi/9/98/Mynhannguapphich.jpg" alt="Phim 2">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Mỹ Nhân Ngư</div>
+          <div class="movie-sub">The Mermaid</div>
+        </div>
+      </div>
+      
+      <div class="movie">
+        <div class="label">Full Vietsub</div>
+        <a href="matvuphuho.html" target="_self">
+        <img src="https://cdn.galaxycine.vn/media/2025/3/19/mat-vu-phu-ho-500_1742357908078.jpg" alt="Phim 3">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Mật Vụ Phụ Hồ</div>
+          <div class="movie-sub">A Working Man</div>
+        </div>
+      </div>
+      <div class="movie">
+        <div class="label">Full Vietsub</div>
+        <a href="latmat8.html" target="_self">
+        <img src="https://cdn.galaxycine.vn/media/2025/4/21/lm8-500_1745206373828.jpg" alt="Phim 4">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Lật Mặt 8: Vòng Tay Nắng</div>
+          <div class="movie-sub">Face Off 8: Embrace Of Light</div>
+        </div>
+      </div>
+      <div class="movie">
+        <div class="label">Tập 10 Vietsub</div>
+        <a href="daugauhocnhom.html" target="_self">
+        <img src="https://static.nutscdn.com/vimg/300-0/955bb963617ffe081ecc2853f3df0f62.jpg" alt="Phim 5">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Đầu Gấu Học Nhóm</div>
+          <div class="movie-sub">Study Group</div>
+        </div>
+      </div>
+     <div class="movie">
+        <div class="label">Full Vietsub</div>
+        <a href="tshoangmac.html" target="_self">
+        <img src="https://static.nutscdn.com/vimg/300-0/339cf2dcac008da754edce6d7a391a9a.jpg" alt="Phim 6">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Thợ săn hoang mạc</div>
+          <div class="movie-sub">Badland Hunters</div>
+        </div>
+      </div>
+         <div class="movie">
+        <div class="label">Full Vietsub</div>
+        <a href="sieuluasieulay.html" target="_self">
+        <img src="https://m.media-amazon.com/images/M/MV5BZmEyZGExYzAtZDY0Yy00ODZjLTljY2YtMjA0YmY0MTQ0ZGNiXkEyXkFqcGc@._V1_.jpg" alt="Phim 7">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Siêu Lừa Gặp Siêu Lầy</div>
+          <div class="movie-sub">Hustler vs Scammer</div>
+        </div>
+      </div>
+         <div class="movie">
+        <div class="label">Full Vietsub + thuyết minh</div>
+        <a href="cuulongtrai.html" target="_self">
+        <img src="https://static.nutscdn.com/vimg/300-0/7db30b2f064b7023a7785a5ed73124e8.jpg" alt="Phim 8">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Cửu Long Thành Trại: Vây Thành</div>
+          <div class="movie-sub">Twilight of the Warriors: Walled In</div>
+        </div>
+      </div>
+         <div class="movie">
+      <div class="label">Full Vietsub</div>
+      <a href="avatar2.html" target="_self">
+      <img src="https://khenphim.com/wp-content/uploads/2022/12/Avatar2-poster_KP.webp" alt="Phim 9">
+      </a>
+      <div class="title-sub">
+      <div class="movie-title">Avatar 2: Dòng Chảy Của Nước</div>
+      <div class="movie-sub">Avatar: The Way of Water</div>
+      </div>
+    </div>
+        <div class="movie">
+        <div class="label">Full Vietsub</div>
+        <a href="attacktitan.html" target="_self">
+        <img src="https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/p/o/poster_dai_chien_nguoi_khong_lo_7.jpg" alt="Phim 10">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Đại Chiến Người Khổng Lồ: Lần Tấn Công Cuối Cùng</div>
+          <div class="movie-sub">Attack on Titan: THE LAST ATTACK</div>
+        </div>
+      </div>
+          <div class="movie">
+        <div class="label">Full Vietsub</div>
+        <a href="quanhanhquanguyhiem.html" target="_self">
+        <img src="https://upload.wikimedia.org/wikipedia/vi/9/98/Hobbs_and_Shaw_VN_poster.jpg" alt="Phim 11">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Quá Nhanh Quá Nguy Hiểm: Hobbs và Shaw</div>
+          <div class="movie-sub">Fast & Furious Presents: Hobbs & Shaw</div>
+        </div>
+      </div>
+             <div class="movie">
+        <div class="label">Full Vietsub</div>
+        <a href="minecraft.html" target="_self">
+        <img src="https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/p/o/poster_minecraft_1.jpg" alt="Phim 12">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Một Bộ Phim Minecraft</div>
+          <div class="movie-sub">A Minecraft Movie</div>
+        </div>
+      </div>
+  </div>
+
+<script src="phimmm.js"></script>
+</body>
+</html>
